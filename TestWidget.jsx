@@ -1,5 +1,5 @@
 /* eslint-disable */
-var React = require('react');
+import React from 'react';
 
 function TestWidget({ text, subtitle }) {
   return (

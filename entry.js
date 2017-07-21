@@ -1,7 +1,7 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var TestWidget = require('./TestWidget.jsx');
-var schema = require('./props-schema.js');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import TestWidget from './TestWidget.jsx';
+import schema from './props-schema.js';
 
 TestWidget.schema = schema;
 

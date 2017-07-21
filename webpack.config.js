@@ -2,7 +2,8 @@ module.exports = {
   entry: './entry.js',
   output: {
     filename: './dist.js',
-    library: 'TestWidget'
+    library: 'TestWidget',
+    libraryTarget: 'umd'
   },
   module: {
     loaders: [
