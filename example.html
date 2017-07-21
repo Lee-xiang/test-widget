@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <!-- This is the main entry point when using this as a node module -->
+    <script src="./dist.js"></script>
+  </head>
+  <body>
+    <div id="widget-target"></div>
+    <script>
+      var el = document.getElementById('widget-target');
+      var slotId = 'example-slot-id';
+      var i = 0;
+      var widgetData = {
+        text: 'My title',
+        subtitle: 'My subtitle'
+      };
+
+      var html = TestWidget.render(widgetData, slotId, i);
+
+      // Only required for this example.
+      var js = html.match(/<script>((.|\n|\s)*?)<\/script>/)[1];
+      el.innerHTML = html;
+      eval(js);
+    </script>
+  </body>
+</html>
